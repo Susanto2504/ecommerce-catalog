@@ -95,48 +95,37 @@ body {
 }
 
 .category-switcher button {
-    background-color: var(--color-white); /* Warna dasar putih */
+    background-color: var(--color-white); 
     border: 1px solid var(--color-grey);
     padding: 8px 15px;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s, color 0.3s; /* Efek transisi halus */
-}
-
-.category-switcher button.active {
-    /* Atur warna teks dan background sesuai kategori aktif */
-    /* Ini akan di-override oleh Page-Men-section/Page-Women-section jika Anda mengatur warna di situ */
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 .category-switcher button:hover {
-    /* Default hover state */
     background-color: var(--color-light-grey);
 }
 
 .category-switcher button:nth-child(1):hover {
-    /* Tombol Pria */
-    background-color: var(--color-birumuda); /* Warna biru muda untuk hover */
+    background-color: var(--color-birumuda); 
     color: var(--color-blue);
 }
 
 .category-switcher button:nth-child(2):hover {
-    /* Tombol Wanita */
-    background-color: var(--color-pink); /* Warna pink untuk hover */
+    background-color: var(--color-pink); 
     color: var(--color-purple);
 }
 
 .category-switcher button.active {
-    /* Umum */
     color: var(--color-white);
 }
 
 .category-switcher .active:nth-child(1) {
-    /* Tombol Pria AKTIF */
     background-color: var(--color-blue); 
 }
 
 .category-switcher .active:nth-child(2) {
-    /* Tombol Wanita AKTIF */
     background-color: var(--color-purple);
 }
 
@@ -146,7 +135,6 @@ body {
     100% { opacity: 0.6; }
 }
 
-/* --- Skeleton Loader Styling --- */
 .skeleton-card {
     position: absolute;
     z-index: 1;
@@ -157,14 +145,14 @@ body {
     margin: 15vh auto;
     max-width: 40%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: var(--color-white); /* Latar belakang putih seperti card asli */
+    background-color: var(--color-white); 
 }
 
 .skeleton-line {
-    background-color: var(--color-light-grey); /* Warna abu-abu untuk placeholder */
+    background-color: var(--color-light-grey); 
     border-radius: 4px;
     margin-bottom: 10px;
-    animation: pulse-bg 1.5s infinite ease-in-out; /* Animasi kedipan */
+    animation: pulse-bg 1.5s infinite ease-in-out; 
 }
 
 .skeleton-title {
@@ -178,7 +166,7 @@ body {
 }
 
 .skeleton-image {
-    height: 250px; /* Tinggi yang sama dengan gambar produk */
+    height: 250px; 
     width: 100%;
     margin: 0 auto 20px;
 }
@@ -188,7 +176,7 @@ body {
     width: 100%;
 }
 .skeleton-description-line:last-child {
-    width: 80%; /* Garis deskripsi terakhir lebih pendek */
+    width: 80%; 
 }
 
 .skeleton-price {
@@ -198,22 +186,20 @@ body {
 
 .skeleton-button {
     height: 40px;
-    width: 120px; /* Lebar yang sama dengan tombol asli */
+    width: 120px; 
     display: inline-block;
     margin-right: 10px;
 }
 
-/* Animasi Kedipan */
 @keyframes pulse-bg {
     0% { background-color: #e0e0e0; }
     50% { background-color: #f0f0f0; }
     100% { background-color: #e0e0e0; }
 }
 
-/* Update Page-Unavailable-product styles jika diperlukan */
 .Page-Unavailable-product .skeleton-card,
 .Page-Unavailable-product .skeleton-line,
 .Page-Unavailable-product .skeleton-image,
 .Page-Unavailable-product .skeleton-button {
-    background-color: var(--color-light-grey); /* Untuk menyesuaikan tema unavailable */
+    background-color: var(--color-light-grey); 
 }
